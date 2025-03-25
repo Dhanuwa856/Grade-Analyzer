@@ -53,14 +53,3 @@ Happy Coding! 💻🔥
 
 
 
-
-
-- Enter one letter at a time or guess the entire word.
-- If you make 3 wrong guesses, you lose!
-- If you guess the word correctly, you win! 🎉
-
-
-
-
-
-
