@@ -229,8 +229,63 @@ def delete_student(df):
 
     return df
 
+def main():
+    # Load student data from the CSV file or create a new DataFrame if the file does not exist.
+
+    # Loop to continuously display the main menu until the user chooses to log out.
+    while True:
+        df = load_data()
+        print("\n==== Grade 11 Evaluation System ====")
+        print("1. Add new student")
+        print("2. View all students")
+        print("3. Update Student Data")
+        print("4. Remove Student")
+        print("5. Student Report")
+        print("6. Log out")
+
+        try:
+            # Prompt the user to select an option.
+            choice = int(input("Choice Number (1-6): "))
+        except ValueError:
+            # Handle cases where the input is not a valid integer.
+            print("Invalid input! Please enter a number between 1 and 6.")
+            continue
+
+        # Process the user's choice.
+        if choice == 1:
+            add_student(df)
+
+        elif choice == 2:
+            view_students(df)
+
+        elif choice == 3:
+            df = update_student(df)  # Update function now returns the updated DataFrame.
+
+        elif choice == 4:
+            df = delete_student(df)  # Delete function now returns the updated DataFrame.
+
+        elif choice == 5:
+            # Ask for the Student ID and display the corresponding report.
+            student_id = input("Student ID required to view details (e.g. ST005): ").strip().upper()
+            try:
+                get_student_report(df, student_id)
+            except ValueError as e:
+                # If the student is not found, print the error message.
+                print(e)
+
+        elif choice == 6:
+            # Log out and exit the loop.
+            print("Logging out of the system...")
+            break
+
+        else:
+            # Handle any invalid choice numbers.
+            print("Invalid selection! Please choose a number between 1 and 6.")
 
 
+
+if __name__ == "__main__":
+    main()
 
 
 
