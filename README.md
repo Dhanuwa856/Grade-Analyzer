@@ -14,53 +14,53 @@ A **Python-based Grade Analyzer** to manage student records efficiently! 🚀
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/Dhanuwa856/Grade-Analyzer.git
-Navigate to the project folder
+2. **Navigate to the project folder**
+   ```bash
+   cd Grade-Analyzer
+3. **Install dependencies**
+   ```bash
+   pip install pandas numpy
+4. **Run the Script**
+   ```bash
+   python grade_analyzer.py
+   
+## 🎮 How to Use
+- 1 ➝ Add a new student
+- 2 ➝ View all student records
+- 3 ➝ Update a student's details
+- 4 ➝ Remove a student
+- 5 ➝ Generate a student report
+- 6 ➝ Exit the program
 
 
-cd Grade-Analyzer
-Install dependencies
+## 🤝 Contributing
+1. **Fork the repository**
+2. **Create a new branch** (`git checkout -b feature-branch`)
+3. **Commit your changes** (`git commit -m "Add new feature"`)
+4. **Push to GitHub** (`git push origin feature-branch`)
+5. **Create a Pull Request**
 
 
-pip install pandas numpy
-Run the script
+## 📜 License
+This project is open-source and available under the **MIT License**.
 
-
-🎮 How to Use
-Run the program and select an option from the menu:
-
-1 ➝ Add a new student
-
-2 ➝ View all student records
-
-3 ➝ Update a student's details
-
-4 ➝ Remove a student
-
-5 ➝ Generate a student report
-
-6 ➝ Exit the program
-
-Follow the on-screen prompts to input or modify data.
-
-Enjoy seamless student grade management! 🎓📊
-
-🤝 Contributing
-Fork this repository
-
-Create a new branch (git checkout -b feature-branch)
-
-Commit your changes (git commit -m "Added a new feature")
-
-Push to GitHub (git push origin feature-branch)
-
-Create a Pull Request
-
-📜 License
-This project is open-source and available under the MIT License.
-
-💡 Feel free to contribute or suggest improvements!
-📩 Contact: pdhanushka856@gmail.com
-
+---
 Happy Coding! 💻🔥
+
+
+
+
+
+
+
+
+
+- Enter one letter at a time or guess the entire word.
+- If you make 3 wrong guesses, you lose!
+- If you guess the word correctly, you win! 🎉
+
+
+
+
 
 
